@@ -79,6 +79,7 @@ fun! s:map() abort
     \ }
   let l:maps = {
         \ 'error':     'e',
+        \ 'fill':      'f',
         \ 'if':        'i',
         \ 'implement': 'm',
         \ 'return':    'r',

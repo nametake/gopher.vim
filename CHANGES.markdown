@@ -187,6 +187,8 @@ vim-go on left, gopher.vim on right.
 
     :GoIfErr                      :GoFrob if; also mapped to ;e (normal) and <C-k>e (insert)
     :GoImpl                       :GoFrob implement; also mapped to ;m (normal) and <C-k>m (insert)
+    :GoFillStruct                 :GoFrob fill and ;f / <C->f mappings; also fills type switches
+    :GoKeyify                     ⤶
 
 ### Other
 
@@ -200,10 +202,6 @@ vim-go on left, gopher.vim on right.
     :GoAlternate                  Several external plugins for this.
 
 ### Not implemented
-
-    :GoKeyify                     Doesn't work well with Go Modules, build tags; would be good to
-                                  have, but tool is 'too broken' atm.
-    :GoFillStruct                 fillstruct (also: add fillswitch)
 
     :GoCoverageBrowser            Not sure if it's worth having? Could add ":GoCoverage browser" if there's demand.
     :GoPlay                       ⤶ can also be done by external "send to pastebin"-like plugin.

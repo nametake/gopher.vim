@@ -77,6 +77,7 @@ Settings for mappings:
 
             Map                   Default value ~
             |(gopher-error)|        e
+            |(gopher-fill)|         f
             |(gopher-if)|           i
             |(gopher-implement)|    m
             |(gopher-return)|       r
@@ -142,6 +143,9 @@ default prefixes.
 ;e  <C-k>e              Generate a return statement with the appropriate zero
                         values for the current function, wrapped in an 'err !=
                         nil' check.
+
+                                                               *(gopher-fill)*
+;f  <C-k>f              Fill a struct or type switch with all missing entries.
 
 ==============================================================================
 FILETYPES                                                   *gopher-filetypes*

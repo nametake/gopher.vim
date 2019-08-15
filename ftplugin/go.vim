@@ -58,12 +58,14 @@ xnoremap <buffer> <silent> [[ :<C-u>call gopher#motion#jump('v', 'prev')<CR>
 " Mappings
 nnoremap <buffer> <Plug>(gopher-popup)  :call gopher#frob#popup()<CR>
 nnoremap <buffer> <Plug>(gopher-error)  :call gopher#frob#ret(1)<CR>
+nnoremap <buffer> <Plug>(gopher-fill)   :call gopher#frob#fill(0)<CR>
 nnoremap <buffer> <Plug>(gopher-if)     :call gopher#frob#if()<CR>
 nnoremap <buffer> <Plug>(gopher-impl)   :call gopher#frob#impl()<CR>
 nnoremap <buffer> <Plug>(gopher-return) :call gopher#frob#ret(0)<CR>
 
 inoremap <buffer> <Plug>(gopher-popup)  <C-o>:call gopher#frob#popup()<CR>
 inoremap <buffer> <Plug>(gopher-error)  <C-o>:call gopher#frob#ret(1)<CR>
+inoremap <buffer> <Plug>(gopher-fill)   <C-o>:call gopher#frob#fill(0)<CR>
 inoremap <buffer> <Plug>(gopher-if)     <C-o>:call gopher#frob#if()<CR>
 inoremap <buffer> <Plug>(gopher-impl)   <C-o>:call gopher#frob#impl()<CR>
 inoremap <buffer> <Plug>(gopher-return) <C-o>:call gopher#frob#ret(0)<CR>
@@ -94,6 +96,7 @@ if g:gopher_map isnot 0
     exe printf('imap %s <Plug>(gopher-popup)', g:gopher_map['_imap_prefix'])
   else
     call s:map('error',  '<Plug>(gopher-error)')
+    call s:map('fill',   '<Plug>(gopher-fill)')
     call s:map('if',     '<Plug>(gopher-if)')
     call s:map('impl',   '<Plug>(gopher-impl)')
     call s:map('return', '<Plug>(gopher-return)')

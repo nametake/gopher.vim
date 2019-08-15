@@ -6,6 +6,7 @@ package tools
 // https://github.com/golang/go/issues/25922
 // List of more tools: https://github.com/golang/go/issues/24661
 import (
+	_ "arp242.net/gofill"
 	_ "arp242.net/goimport"
 	_ "arp242.net/gosodoff"
 	_ "github.com/fatih/gomodifytags"

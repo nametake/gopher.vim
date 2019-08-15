@@ -2,7 +2,10 @@ module tools
 
 go 1.12
 
+replace arp242.net/gofill => /home/martin/code/gofill
+
 require (
+	arp242.net/gofill v1.0.0
 	arp242.net/goimport v1.0.2
 	arp242.net/gosodoff v0.0.0-20190808150955-78886b9cf0e3
 	github.com/fatih/gomodifytags v1.0.1
