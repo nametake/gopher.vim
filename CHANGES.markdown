@@ -83,6 +83,8 @@ Features not in vim-go
 - `:GoFrob if` (`;i` / `<C-k>i`) toggles between single-line `if a := f(); a`
   and normal `if` statements.
 
+- `:GoFrob switch` creates a type switch with all possible type values in.
+
 - Basic support for present files.
 
 Feature table
@@ -187,7 +189,7 @@ vim-go on left, gopher.vim on right.
 
     :GoIfErr                      :GoFrob if; also mapped to ;e (normal) and <C-k>e (insert)
     :GoImpl                       :GoFrob implement; also mapped to ;m (normal) and <C-k>m (insert)
-    :GoFillStruct                 :GoFrob fill and ;f / <C->f mappings; also fills type switches
+    :GoFillStruct                 :GoFrob fill and ;f / <C->f mappings
     :GoKeyify                     ⤶
 
 ### Other

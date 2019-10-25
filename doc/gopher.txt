@@ -77,10 +77,11 @@ Settings for mappings:
 
             Map                   Default value ~
             |(gopher-error)|        e
-            |(gopher-fill)|         f
             |(gopher-if)|           i
             |(gopher-implement)|    m
             |(gopher-return)|       r
+            |(gopher-struct)|       w
+            |(gopher-switch)|       s
 
         Some examples:
 
@@ -144,8 +145,11 @@ default prefixes.
                         values for the current function, wrapped in an 'err !=
                         nil' check.
 
-                                                               *(gopher-fill)*
-;f  <C-k>f              Fill a struct or type switch with all missing entries.
+                                                             *(gopher-struct)*
+;s  <C-k>s              Fill a struct with all missing entries.
+
+                                                             *(gopher-switch)*
+;w  <C-k>w              Fill a type switch with all missing entries.
 
 ==============================================================================
 FILETYPES                                                   *gopher-filetypes*
