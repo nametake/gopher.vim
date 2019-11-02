@@ -76,6 +76,7 @@ fun! s:map() abort
         \ '_nmap_prefix': ';',
         \ '_imap_prefix': '<C-k>',
         \ '_imap_ctrl':   1,
+        \ '_check_map':   1,
     \ }
   let l:maps = {
         \ 'error':     'e',

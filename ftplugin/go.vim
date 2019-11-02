@@ -87,8 +87,9 @@ fun! s:map(key, map, norm, ins) abort
 endfun
 
 if g:gopher_map isnot 0
-  let s:has_norm = mapcheck(g:gopher_map['_nmap_prefix'], 'n') isnot# ''
-  let s:has_ins  = mapcheck(g:gopher_map['_imap_prefix'], 'i') isnot# ''
+  let s:is_check = g:gopher_map['_check_map']
+  let s:has_norm = s:is_check ? mapcheck(g:gopher_map['_nmap_prefix'], 'n') isnot# '' : 0
+  let s:has_ins  = s:is_check ? mapcheck(g:gopher_map['_imap_prefix'], 'i') isnot# '' : 0
 
   if s:has_norm
     call gopher#error('skipping normal mode mappings as %s is already mapped to %s',
